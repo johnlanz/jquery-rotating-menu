@@ -1,4 +1,5 @@
 To use it simply insert the following:
+
 Javascript: (Inside <head> tag)
 <script src="jquery.js"></script>
 <script src="jquery.rotatingMenu.js"></script>
@@ -65,5 +66,5 @@ $(function(){
 	});
 });
  
-Test on: IE6+ and firefox
+Tested on: IE6+ and firefox
 
