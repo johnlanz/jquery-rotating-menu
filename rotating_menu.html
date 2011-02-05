@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rotating Menu</title>
+<style type="text/css">
+<!--
+body {
+	margin: 0px;
+}
+img{
+	border: 0;
+}
+
+#rotatingMenu{
+	width: 500px;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	position:relative;
+}
+#rotatingMenu div{
+	height: 52px;
+	width: 48px;
+	position: absolute;
+}
+#rotatingMenu span{
+	text-align: center;
+	font-weight: bold;
+	display: none;
+}
+#rotatingMenu a, #rotatingMenu2 a{
+	color: #000000;
+	text-decoration: none;
+}
+
+#rotatingMenu2{
+	width: 700px;
+	height: 200px;
+	position:relative;
+}
+#rotatingMenu2 div{
+	height: 40px;
+	width: 60px;
+	position: absolute;
+	background: #CCCCCC;
+	text-align: center;
+}
+-->
+</style>
+<script type="text/javascript" src="jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="jquery.rotatingMenu.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#rotatingMenu').rotatingMenu();
+		$('#rotatingMenu2').rotatingMenu();
+	});
+</script>
+</head>
+<body>
+<p>&nbsp;</p>
+<div id="rotatingMenu">
+	<div id="rmenu1"><a href="#">
+        <img src="icons/bin.png" alt="..." />
+        <span>bin</span>
+    </a></div>
+    <div id="rmenu2"><a href="#">
+        <img src="icons/burn.png" alt="..." />
+        <span>burn</span>
+    </a></div>
+    <div id="rmenu3"><a href="#">
+        <img src="icons/calendar.png" alt="..." />
+        <span>calendar</span>
+    </a></div>
+    <div id="rmenu4"><a href="#">
+        <img src="icons/debian.png" alt="..." />
+        <span>debian</span>
+    </a></div>
+    <div id="rmenu5"><a href="#">
+        <img src="icons/emulator.png" alt="..." />
+        <span>emulator</span>
+    </a></div>
+    <div id="rmenu6"><a href="#">
+        <img src="icons/firefox.png" alt="..." />
+        <span>firefox</span>
+    </a></div>
+    <div id="rmenu7"><a href="#">
+        <img src="icons/network.png" alt="..." />
+        <span>network</span>
+    </a></div>
+    <div id="rmenu8"><a href="#">
+        <img src="icons/osx.png" alt="..." />
+        <span>osx</span>
+    </a></div>
+    <div id="rmenu9"><a href="#">
+        <img src="icons/sun.png" alt="..." />
+        <span>sun</span>
+    </a></div>
+    <div id="rmenu10"><a href="#">
+            <img src="icons/vista.png" alt="..." />
+            <span>vista</span>
+    </a></div>
+</div>
+
+<div id="rotatingMenu2">
+	<div id="rmenu1"><a href="#">One</a></div>
+    <div id="rmenu2"><a href="#">Two</a></div>
+    <div id="rmenu3"><a href="#">Three</a></div>
+    <div id="rmenu4"><a href="#">Four</a></div>
+    <div id="rmenu5"><a href="#">Five</a></div>
+    <div id="rmenu6"><a href="#">Six</a></div>
+    <div id="rmenu7"><a href="#">Seven</a></div>
+    <div id="rmenu8"><a href="#">Eight</a></div>
+    <div id="rmenu9"><a href="#">Nine</a></div>
+    <div id="rmenu10"><a href="#">Ten</a></div>
+    <div id="rmenu11"><a href="#">Eleven</a></div>
+    <div id="rmenu12"><a href="#">Twelve</a></div>
+</div>
+<strong>CSS:</strong>
+<pre>
+#rotatingMenu2{
+	width: 700px;
+	height: 200px;
+	position:relative;
+}
+#rotatingMenu2 div{
+	height: 40px;
+	width: 60px;
+	position: absolute;
+	background: #CCCCCC;
+	text-align: center;
+}
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+To use it simply insert the following:
+Javascript: (Inside <head> tag)
+<script src="jquery.js"></script>
+<script src="jquery.rotatingMenu.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#rotatingMenu').rotatingMenu();
+	});
+</script>
+Html:
+<div id="rotatingMenu">
+	<div id="rmenu1">
+		<a href="#">
+			<img src="icons/bin.png" alt="..." />
+			<span>bin</span>
+		</a>
+	</div>
+	<div id="rmenu2">
+		<a href="#">
+			<img src="icons/burn.png" alt="..." />
+			<span>burn</span>
+		</a>
+	</div>
+ 
+	<div id="rmenu3">
+		...
+	</div>
+	...
+</div> 
+Increment <div id="rmenu" />
+If you want to change id="rmenu", you also need to change the default option. see plugin option
+span is the title of your menu. It's also optional.
+
+Css:
+#rotatingMenu{
+	width: 500px;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	position:relative;
+}
+#rotatingMenu div{
+	height: 52px; /*height of individual icon*/
+	width: 48px; /*width of individual icon*/
+	position: absolute;
+}
+#rotatingMenu span{
+	text-align: center;
+	font-weight: bold;
+	display: none;
+}
+#rotatingMenu a{
+	color: #000000;
+	text-decoration: none;
+}
+ 
+Changing '#rotatingMenu' width and height will automatically change the positioning of the individual div/icon. See the Demo
+
+Plugins Option:
+$(function(){
+	$('#rotatingMenu').rotatingMenu({
+		maxSpeed: 500, /*500 is default value*/
+		minSpeed: 2000, /*2000 is default value*/
+		divId: "#rmenu"
+	});
+});
+ 
+Test on: IE6+ and firefox
+
